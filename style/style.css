@@ -1,0 +1,302 @@
+body{
+    /*font-family: 'Montserrat', sans-serif;*/
+    background-image: linear-gradient(15deg, rgb(70, 76, 189) 30%, rgb(63, 51, 119));
+
+}
+
+/*Aqui empieza el header*/
+header{
+    background-image: linear-gradient(15deg,rgb(70, 76, 189)30%,rgb(63, 51, 119));
+    padding: 20px 0;
+}
+
+.caja{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.caja img{
+    width: 13%;
+}
+nav{
+    position: absolute;
+    top:calc(50% - 20px);
+    right:0;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+nav li{
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: rgb(240, 248, 255);
+    text-shadow: 1px 1px 5px rgb(101, 96, 139);
+}
+
+nav a:hover{
+    text-decoration:underline;
+    text-decoration-color: #E1BEE7;
+    -moz-text-decoration-color: #E1BEE7;
+}
+
+/*Empieza el banner*/
+.banner{
+    height: 300px;
+    background-image: url(../img/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-attachment:fixed;
+    background-position: bottom;
+}
+
+/*tamaños de los contenedores*/
+.principal, .diferenciales, .publicidad, .servicios, .video, .contacto,.mapa{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+/*empieza sobre la barberia alura*/
+
+.titulo-principal{
+    font-size: 2em;
+    text-align: center;
+    margin: 1.5em 0;
+    clear: left;
+    text-transform: capitalize;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+.principal strong{
+    font-weight: bold;
+}
+.principal em{
+    font-style: italic;
+}
+.principal  em strong{
+    color: red;
+}
+
+.utensilios{
+    width: 15%;
+    float: left;
+    margin: 0 20px 15px 0;
+    border-radius: 20PX;
+    -webkit-border-radius: 20PX;
+    -moz-border-radius: 20PX;
+    -ms-border-radius: 20PX;
+    -o-border-radius: 20PX;
+}
+
+/*Aqui empieza los diferciales*/
+.diferenciales{
+    text-align: center;
+}
+
+.diferenciales .lista-diferenciales{
+    margin: 0;
+    width: 40%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    padding: 0 25px 20px 0;
+}
+
+.items{
+    list-style: none;
+    line-height: 2;
+}
+.items::before{
+    content:"✯"
+}
+
+.items::after{
+    content:"."
+}
+.items:first-child{
+    font-weight: bold;
+}
+
+.imagen-diferenciales{
+    width: 45%;
+    display: inline-block;
+    box-shadow: 10px 10px 30px 15px #000000;
+    border-radius: 50px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    transition: 400ms;
+}
+
+.imagen-diferenciales:hover{
+    opacity: 0.3;
+}
+
+.video{
+    margin: 0 auto 2.5em auto;
+}
+
+.frame{
+    height: 400px;
+}
+
+
+
+/*Aqui empieza la seccion de servicios*/
+.servicios {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.servicios .card {
+    text-align: center;
+}
+
+.servicios .card-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.servicios .servicios-descripcion {
+    font-size: 18px;
+    margin: 0;
+}
+
+.servicios .servicios-precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+
+
+/*Aqui empiezan los estilos para la seccion contacto*/
+  
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 20px;
+}
+
+  .formulario {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .formulario label,
+  .formulario legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+  }
+  
+  .formulario fieldset {
+    border: none;
+  }
+  
+  .input-padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 100%;
+    overflow: auto;
+    border: 1px solid rgb(6, 81, 138);
+    border-radius: 5px;
+  }
+  
+  textarea {
+    resize: none;
+    line-height: 1;
+    word-spacing: 3px;
+  }
+  
+  .checkbox {
+    margin: 30px 0;
+    padding: 0 12px;
+  }
+  
+  .enviar {
+    width: 40%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 179, 0);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .enviar:hover {
+    background-color: rgb(255, 153, 0);
+  }
+  
+  .informacion {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0 0 40px;
+  }
+  
+  .informacion .icono {
+    display: inline-block;
+    width: 20px;
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+  }
+  
+  .informacion h3 {
+    font-size: 18px;
+    margin: 0 0 5px;
+    color: rgb(255, 179, 0);
+  }
+  
+  .informacion p {
+    margin: 0;
+  }
+  
+  .mapa {
+    background-color: rgb(233, 240, 245);
+    padding: 40px 0;
+  }
+  
+  .mapa h3 {
+    font-size: 28px;
+    margin: 0 0 20px;
+    color: rgb(6, 81, 138);
+  }
+  
+  .mapa p {
+    margin: 0 0 20px;
+  }
+  
+  footer {
+    background-color: rgb(6, 81, 138);
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer img {
+    width: 80px;
+    height: 80px;
+    margin: 0 0 20px;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.8;
+  }
